@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                   style: TextStyle(color: Colors.white, fontSize: 14),
                 ),
                 Text(
-                  '1:08 PM',
+                  '1:04 PM',
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
                 Text(
