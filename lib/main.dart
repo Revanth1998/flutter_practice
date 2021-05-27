@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFFEFEFEF),
         centerTitle: true,
-        title: Image.asset("assets/images/ikhlas.png"),
+        title: Image.asset("assets/images/logo.png"),
       ),
       body: Container(
         child: CustomScrollView(
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
             ),
             SliverGrid(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
+                  crossAxisCount: 3,
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
@@ -128,9 +128,9 @@ class _ThirdClassState extends State<ThirdClass> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints.expand(width: 375, height: 200),
-      decoration: BoxDecoration(color: Colors.white12),
-      padding: new EdgeInsets.all(16.0),
+      constraints: BoxConstraints.expand(width: 380, height: 235),
+      color: Colors.white10,
+      padding: new EdgeInsets.all(30.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,30 +140,57 @@ class _ThirdClassState extends State<ThirdClass> {
             children: [
               Column(
                 children: [
-                  Image.asset('assets/images/prayer.png'),
-                  Text("Prayer",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/prayer.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Prayer",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 14,
+                        )),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/qibla.png'),
-                  Text("Qibla",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/qibla.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Qibla",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/sadaqah.png'),
-                  Text("sadaqah",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/sadaqah.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("sadaqah",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/shop.png'),
-                  Text("Shop",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/shop.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Shop",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
             ],
@@ -173,30 +200,54 @@ class _ThirdClassState extends State<ThirdClass> {
             children: [
               Column(
                 children: [
-                  Image.asset('assets/images/fidyah.png'),
-                  Text("Fidyah",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/fidyah.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Fidyah",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/zakat.png'),
-                  Text("Zakat",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/zakat.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Zakat",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/aqiqah.png'),
-                  Text("Aqiqah",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/aqiqah.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Aqiqah",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
               Column(
                 children: [
-                  Image.asset('assets/images/qurban.png'),
-                  Text("Qurban",
-                      style: TextStyle(color: Colors.black, fontSize: 14)),
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Image.asset('assets/images/qurban.png'),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(12),
+                    child: Text("Qurban",
+                        style: TextStyle(color: Colors.black, fontSize: 14)),
+                  ),
                 ],
               ),
             ],
@@ -226,7 +277,7 @@ class FourthScreenState extends State<FourthScreen> {
               Image.asset('assets/images/avatar.png'),
               Column(
                 children: [
-                  Text(" masjid Ar Rahah",
+                  Text(" Masjid Ar Rahah",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 16,
@@ -240,9 +291,12 @@ class FourthScreenState extends State<FourthScreen> {
               ),
             ],
           ),
-          Text(
-            "#givewithikhlas bekerjasama dengan ourfarm, Masala Wheels & Yayasan Hasanah untuk projek Food4B40 di PPR Laksamana Jalan Peel, PPR Batu Muda, PPR Kepong & Jinjang hari ini. Sebanyak 220 pek makanan asas diedarkan kepada rakan-rakan kaum India sebagai … ",
-            style: TextStyle(color: Colors.black, fontSize: 14),
+          Padding(
+            padding: EdgeInsets.all(18),
+            child: Text(
+              "#givewithikhlas bekerjasama dengan ourfarm, Masala Wheels & Yayasan Hasanah untuk projek Food4B40 di PPR Laksamana Jalan Peel, PPR Batu Muda, PPR Kepong & Jinjang hari ini. Sebanyak 220 pek makanan asas diedarkan kepada rakan-rakan kaum India sebagai … ",
+              style: TextStyle(color: Colors.black, fontSize: 14),
+            ),
           ),
         ],
       ),
