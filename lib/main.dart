@@ -3,18 +3,6 @@ import 'package:sampleproject/secondscreen.dart';
 import 'package:sampleproject/thirdClass.dart';
 import 'package:sampleproject/fourthscreen.dart';
 
-extension ColorExtension on String {
-  toColor() {
-    var hexColor = this.replaceAll("#", "");
-    if (hexColor.length == 6) {
-      hexColor = "FF" + hexColor;
-    }
-    if (hexColor.length == 8) {
-      return Color(int.parse("0x$hexColor"));
-    }
-  }
-}
-
 void main() => runApp(MaterialApp(
       home: HomePage(),
       debugShowCheckedModeBanner: false,

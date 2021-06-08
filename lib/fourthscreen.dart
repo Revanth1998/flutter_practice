@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:sampleproject/hexcolor.dart';
 
 class FourthScreen extends StatefulWidget {
   @override
@@ -9,7 +11,8 @@ class FourthScreenState extends State<FourthScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Color(0xFFFFFF),
+      //color: HexColor('FFFFFF'),
       padding: new EdgeInsets.all(16.0),
       child: Column(
         children: [

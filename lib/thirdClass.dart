@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:sampleproject/hexcolor.dart';
 
 class ThirdClass extends StatefulWidget {
   @override
@@ -10,7 +12,8 @@ class _ThirdClassState extends State<ThirdClass> {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints.expand(width: 380, height: 235),
-      color: Colors.white10,
+      color: Color(0xF9F9F9),
+      // color: HexColor('F9F9F9'),
       padding: new EdgeInsets.all(30.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
