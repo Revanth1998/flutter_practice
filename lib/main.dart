@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sampleproject/nav.dart';
 import 'package:sampleproject/secondscreen.dart';
 import 'package:sampleproject/thirdClass.dart';
 import 'package:sampleproject/fourthscreen.dart';
 
 void main() => runApp(MaterialApp(
-      home: HomePage(),
+      home: Nav(),
       debugShowCheckedModeBanner: false,
     ));
 
